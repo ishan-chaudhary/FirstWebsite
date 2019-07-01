@@ -1,0 +1,43 @@
+@media only screen and (max-width: 1000px) {
+    #logo-name,#links {
+      display: none;
+    }
+    #hamburger{
+        display:block;
+    }
+    main{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #queue{
+        margin-top:20px;
+        width:auto;
+    }
+    #queue-holder{
+        
+        display:flex;
+        flex-direction:row;
+        justify-content:space-around;
+    }
+    .queue-card{
+        
+        width:70%;
+    }
+    #selection{
+        margin-left:auto;
+    }
+    #main{
+        width:100vw;
+    }
+    #content{
+        width:100%;
+    }
+    #fore p{
+        font-weight: 2rem;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        line-height: 30px;
+        color:black;
+    }
+  }

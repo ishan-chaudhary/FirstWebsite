@@ -1,0 +1,359 @@
+/* body design */
+body {
+	color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	animation: Gradient 15s ease infinite;
+}
+
+
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+/* Navigation toolbar */
+#navbar{
+    background-color: rgb(85, 82, 82);
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    height:10vh;
+    width:100%;
+    margin: 4px;
+    align-items: baseline;
+    border-radius:1rem;
+}
+#logo{
+height:70%;
+margin:5px;
+}
+#logo img{
+  height:100%; 
+}
+#navbar a{
+    text-decoration: none;
+    color:white;
+    margin:20px;
+    font-size: 1.5rem;
+    
+}
+#search{
+    width:30%;
+    margin-left:auto;
+    margin-right: -13%;
+    
+}
+#search-box{
+    height:40%;
+    background-color: white;
+    border-radius:1.5rem;
+    width:60%;
+    padding:5px;
+}
+#search button{
+    height:80%;
+    width:20%;
+    background-color: white;
+    border-radius: 70%;
+    border-color:white;
+    color:black;
+}
+/* Hamburger Button to appear when screen size is reduced */
+#hamburger{
+    display:none;
+    height:90%;
+    width:10%;
+    font-size:2rem;
+}
+#menu{
+    display:none;
+    position:absolute;
+    top:80px;
+    left:80px;
+    height:10px;
+    width:10px;
+    background-color:rgba(255, 255, 255, 0.6);
+
+}
+#hamburger:hover #menu{
+    box-shadow:0px 0px 4px 5px rgb(117, 111, 111);
+    display: inline;
+    height:200px;
+    width:150px;
+}
+#menu a{
+    color:black;
+}
+
+#profile img{
+    border-radius:80%;
+    height:70%;
+    margin:5px;
+}
+main{
+    display:flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+/* Main content */
+#content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width:70vw;
+}
+@keyframes animatebackground{
+    from { background-position:  0 0; }
+	to { background-position: 100% 0; }
+}
+#crousel{
+    width:80%;
+    margin:auto;
+    padding: 10px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/music.jpg);
+    animation-name: animatebackground;
+    animation-timing-function:linear;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    border-radius: 1rem;
+}
+#horizontal-list li{
+    display: inline-block;
+}
+#crousel a{
+    color:black;
+}
+#crousel i:hover{
+    
+    border-radius:50%;
+    box-shadow: 0px 0px 4px 2px grey;
+}
+#slider{
+    
+    margin-top: 5px;
+    margin: auto;
+}
+#images{
+    height:100%;
+    width:100%;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 4px 5px grey;
+    background-color: transparent;
+}
+#images img{
+    width:100%;
+    height:100%;
+    
+}
+/* suggestion box for the users */
+#latest{
+    background-color:white;
+    height:50vh;
+    width:100%;
+    margin-top:30px;
+}
+#holder{
+   
+    width:100%;
+    height:80%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.card{
+    display: inline-block;
+    text-align: center;
+    width:200px;
+    margin:10px; 
+    height:80%;
+    background-color: white;
+    border-top-right-radius: 2rem;
+    border:2px solid black;
+    color: black;
+    vertical-align: top;
+}
+.card figure img{
+    height:70%;
+    width:100%;
+}
+.card:hover{
+    box-shadow: 0px 0px 4px 2px white;
+    transform: scale(1.1);
+}
+/* Side playlist queue containing latest listened songs */
+#queue{
+    
+    background-color: rgba(85, 82, 82, 0.61);
+    width:20vw;
+    padding: 5px;
+    height:auto;
+    box-shadow: 2px 2px 8px 4px black;
+    margin-left:20px;
+   
+}
+#queue h1{
+    border-left:2px solid white;
+    border-bottom:2px solid white;
+    padding:5px;
+}
+#queue-holder{
+   
+    margin-top:5px;
+   
+    height:90%;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+#selection{
+    margin-left:50%;
+   
+}
+.queue-card{
+    width:90%;
+    height:100px;
+    background-color:transparent;
+    
+    border-radius:1rem;
+    margin:10px;
+    
+}
+.queue-card img{
+    
+    margin-left:10px;
+    border-radius:50%;
+    display: inline;
+    height:70%;
+    width:30%;
+   
+}
+.queue-card h3{
+    display:inline;
+    vertical-align: top;
+}
+.queue-card:hover{
+    
+    transform:scale(1.25);
+}
+#queue-holder a{
+    text-decoration: none;
+    color:white;
+}
+/* Choice based on mood */
+#mood{
+    background-color:rgba(85, 82, 82, 0.61);
+    height:auto;
+    width:100%;
+    margin-top:20px;
+    display:flex;
+    flex-direction: column;s
+}
+#mood-options{
+    
+    height:70%;
+    margin-top:5px;
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    padding:20px;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.mood-card{
+   
+    height:70%;
+    width:30%;
+    text-align:center;
+    font-size:2rem;
+    
+}
+.parent
+{
+     width:300px;
+     height: 200px;
+     overflow: hidden; 
+     text-align: center;
+
+}
+#party
+{
+     height: 100%;
+     width: 100%;
+     background-size: cover;
+     background-position: center;
+     transition: all 0.5s ease;
+     background-image: url(images/party.jpg);
+}
+#party:hover
+{
+     transform: scale(1.2);
+}
+#workout
+{
+     height: 100%;
+     width: 100%;
+     background-size: cover;
+     background-position: center;
+     transition: all 0.5s ease;
+     background-image: url(images/workout.jpg);
+}
+#workout:hover
+{
+     transform: scale(1.2);
+}
+#romance
+{
+     height: 100%;
+     width: 100%;
+     background-size: cover;
+     background-position: center;
+     transition: all 0.5s ease;
+     background-image: url(images/love.jpg);
+}
+#romance:hover
+{
+     transform: scale(1.2);
+}
+#artists{
+    margin-top:10px;
+    height:auto;
+    width:100%;
+
+}
+/* Artist Choice */
+#artist-images{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+}
+#artist-images img{
+    height:200px;
+    width:200px;
+    border-radius:50%;
+    margin:5px;
+    border:2px solid white;
+    transition: all 0.5s linear;
+}
+
+.singers:hover{
+    transform: scale(1.2) rotate(-20deg);
+}
+

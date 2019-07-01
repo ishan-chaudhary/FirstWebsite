@@ -1,0 +1,64 @@
+#main{
+    display:flex;
+    flex-direction: column;
+    font-size:2rem;
+}
+#title-track{
+    height:50vh;
+    width:100%;
+   
+}
+#playlist{
+    width:100%;
+    margin:20px;
+}
+#back{
+    width:100%;
+    height:100%;
+    background-image:url("images/disco.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter:blur(4px);
+ 
+}
+#fore{
+    z-index:1px;
+    width:50%;
+    height:300px;
+    background-color: rgba(152, 172, 172, 0.527);
+    position:absolute;
+    top:20vh;
+    left:25vw;
+    display:flex;
+}
+#fore p{
+    font-weight: 3rem;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    line-height: 50px;
+    color:black;
+}
+#fore:hover{
+    transform: scale(1.1);
+}
+/* table for playlist design */
+table{
+    margin:auto;
+    width:70%;
+    height:40vh;
+    color:black;
+}
+table ,th ,td{
+    border:2px solid black;
+    border-collapse: collapse;
+   }
+   tr:nth-child(2n){
+       background-color: lightgray;
+   }
+.col1{
+    width:20%;
+}
+ td:hover{
+    box-shadow: 2px 2px 6px 4px black;
+}
