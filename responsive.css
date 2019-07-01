@@ -42,6 +42,7 @@
     }
     #mood-options{
         flex-direction: column;
+        align-content: center;
     }
     #artists{
         height:auto;
