@@ -260,7 +260,7 @@ main{
     width:100%;
     margin-top:20px;
     display:flex;
-    flex-direction: column;s
+    flex-direction: column;
 }
 #mood-options{
     
@@ -342,7 +342,8 @@ main{
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-content: center;
 }
 #artist-images img{
     height:200px;

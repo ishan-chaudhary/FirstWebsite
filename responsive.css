@@ -40,4 +40,10 @@
         line-height: 30px;
         color:black;
     }
+    #mood-options{
+        flex-direction: column;
+    }
+    #artists{
+        height:auto;
+    }
   }
