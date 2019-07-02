@@ -8,13 +8,14 @@
     align-items: baseline;
 }
 #music-player:target{
-    height:300px;
-    width:80%;
-    margin-left:140px;
+    height:330px;
+    width:85%;
+    margin-left:70px;
+    margin-right:50px;
     background-color: rgba(128, 128, 128, 0.418);
     position:fixed;
     border-radius: 1rem;
-    top:60vh;
+    bottom:0px;
 }
 .container-audio {
     width: 66%;

@@ -47,4 +47,7 @@
     #artists{
         height:auto;
     }
+    #latest{
+        height:40vh;
+    }
   }
